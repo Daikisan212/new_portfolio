@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオサイト</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a10260fb19.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+  <header class="header">
+      <h1 class="site-title"><a href="about.html">Yokoyama Daiki</a></h1>
+
+      <div class="nav-wrapper">
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-item">About</li>
+            <li class="nav-item"><a href="works.html">Works</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="burger-btn">
+        <span class="bars">
+          <span class="bar bar_top"></span>
+          <span class="bar bar_mid"></span>
+          <span class="bar bar_bottom"></span>
+        </span>
+      </div>
+    </header>
+
+    <main>
+      <div class="contents">
+        <p class="main-copy">Daiki.Portfolio</p>
+      </div>
+
+      <section class="section-wrapper" id="about">
+        <h2 class="section-title">About&nbsp;Me?</h2>
+        <p class="section-text">このサイトは、横山大希のポートフォリオ（作品集）です。</p>
+        <h3 class="about-title">Profile</h3>
+        <div class="about-cts flex">
+          <div class="about-img">
+            <figure>
+              <img src="img/profile.jpg" alt="profile">
+              <figcaption>証明写真です。</figcaption>
+            </figure>
+          </div>
+          <div class="about-text">
+            <dl class="flex">
+              <dt>氏名</dt>
+              <dd>横山大希</dd>
+            </dl>
+            <dl class="flex">
+              <dt>経歴</dt>
+              <dd>
+                2015年　3月
+                <span class="about-text-career">&nbsp;佐野市立南中学校&nbsp;卒業</span>
+                <br>
+                2015年　4月
+                <span class="about-text-career">&nbsp;鹿島学園高等学校&nbsp;入学</span>
+                <br>
+                2018年　3月
+                <span class="about-text-career">&nbsp;東京マルチメディア専門学校&nbsp;モバイル・アプリケーション科&nbsp;入学</span>
+                <br>
+                2021年　3月
+                <span class="about-text-career">&nbsp;東京マルチメディア専門学校&nbsp;モバイル・アプリケーション科&nbsp;卒業見込み</span>
+                <br>
+              </dd>
+            </dl>
+            <dl class="flex">
+              <dt>資格</dt>
+              <dd>日本情報処理検定協会主催　文書デザイン検定試験１級</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-wrapper" id="skill">
+        <h3 class="about-title">スキル</h3>
+        <div class="skill-box flex around">
+          <div class="skill-contents">
+            <p class="skill-icon">
+              <i class="fas fa-code"></i>
+              <h4>Coding</h4>
+              <p class="skill-text">学校では、静的ホームページと動的ホームページ、スマートフォンアプリ<span class="text-min">（IOS,Android）</span>を開発してきました。また、MySQLの基本操作やLinuxを使用したサーバーの構築なども可能です。
+              </p>
+              <h5>使用可能言語</h5>
+              <p class="skill-available">HTML,CSS,JavaScript,jQuary,<br>
+                Scss,PHP,Java,Swift,MySQL,Linux</p>
+            </p>
+          </div>
+          <div class="skill-contents">
+            <p class="skill-icon">
+              <i class="fas fa-laptop-code"></i>
+              <h4>part time job</h4>
+              <p class="skill-text">去年の10月からIT企業でアルバイトをしておりました。主に自社LP制作、ソースコードの整理、パッケージの更新などを携わってきました。
+              </p>
+              <h5>使用言語およびツール</h5>
+              <p class="skill-available">HTML,CSS,SCSS,Ruby,Slim,<br>
+                Node.js,Docker  </p>
+            </p>
+          </div>
+          <div class="skill-contents">
+            <p class="skill-icon">
+              <i class="fas fa-laptop"></i>
+              <h4>Computer</h4>
+              <p class="skill-text">WindowsとMacで開発を行ったことがあるので、臨機応変に対応することが出来ます。
+              </p>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">Created by Yokoyama Daiki</footer>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/about.js"></script>
+</body>
+</html>

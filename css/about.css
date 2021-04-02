@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", "Noto Sans JP", sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+body.noscroll {
+  overflow: hidden;
+}
+.flex {
+  display: flex;
+}
+.flex dd:nth-child(2) {
+  padding-bottom: 10px;
+}
+.space-around {
+  justify-content: space-around;
+}
+.text-min {
+  font-size: 12px;
+}
+.header {
+  background:#A85B28;
+  color: #fff;
+  height: 74px;
+  padding: 0 120px;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+}
+.nav-item {
+  color: #DED2BF;
+  margin-right: 55px;
+}
+.nav-item a {
+  transition: 2s;
+}
+.nav-item a:hover {
+  color: #DED2BF;
+  transition: 1s;
+}
+.burger-btn {
+  display: none;
+}
+.contents {
+  height: 90vh;
+  background-image: url(../img/mac.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-copy {
+  font-size: 50px;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid #fff;
+  padding: 34px 42px;
+}
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 30px;
+}
+.section-text {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  margin:40px 0;
+  padding-left:1em;
+  border-left: 5px solid #A85B28;
+}
+.section-wrapper {
+  padding: 100px 10% 50px;
+}
+.about-cts {
+  margin: 30px 0;
+}
+.about-cts figure {
+  margin: 0 50px 30px 0;
+}
+.about-text {
+  width: 55vw;
+  font-size: 18px;
+}
+.about-text dt {
+  font-weight: bold;
+  margin-right: 30px;
+  min-height: 50px;
+  text-align: center;
+  white-space: nowrap;
+}
+.about-text dl {
+  margin-bottom: 20px;
+}
+.about-text-career {
+  margin-left: 1.5em;
+  margin-bottom: 15px;
+}
+.skill-contents {
+  width: 30%;
+  text-align: center;
+  margin-top: 50px;
+}
+.skill-contents:first-child {
+  margin-left: 50px;
+}
+.skill-contents p {
+  margin: 20px;
+}
+.skill-contents h4 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.skill-contents h5 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.skill-icon {
+  font-size: 80px;
+  color: #777;
+}
+.skill-text {
+  text-align: left;
+}
+.skill-available {
+  text-align: left;
+}
+.footer {
+  background:#A85B28;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0 5%;
+  }
+  .burger-btn {
+    display: block;
+    width: 39px;
+    height: 39px;
+    position: relative;
+    z-index: 3;
+  }
+  .bar {
+    width: 20px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+  }
+  .bar_top {
+    top: 10px;
+  }
+  .bar_mid {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .bar_bottom {
+    bottom: 10px;
+  }
+  .burger-btn.close .bar_top {
+    transform: translate(-50%, 10px) rotate(45deg);
+    transition: transform 0.3s;
+  }
+  .burger-btn.close .bar_mid {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .burger-btn.close .bar_bottom {
+    transform: translate(-50%, -8px) rotate(-45deg);
+    transition: transform 0.3s;
+  }
+  .nav-wrapper {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2; /*キービジュアルと.btn_triggerとの重なりの前後関係を調整*/
+  }
+  .header-nav {
+    width: 100%;
+    height: 100%;
+    background-color: #A85B28;
+    z-index: 2;
+  }
+  .header-nav .nav-list {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .header-nav .nav-item {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .main-copy {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .section-wrapper {
+    padding: 100px 5% 50px;
+  }
+  .about-cts {
+    display: block;
+  }
+  figure {
+    text-align: center;
+  }
+  .about-cts figure {
+    margin: 0 0 30px 0;
+  }
+  .about-text {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .skill-box {
+    display: block; 
+  }
+  .skill-contents {
+    width: 70%;
+    margin: 30px auto;
+  }
+}
